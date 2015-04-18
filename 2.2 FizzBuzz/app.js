@@ -30,7 +30,7 @@ for (var runs = 1 ; runs <= 21  ; runs++){
 
 
   //if number is only divideble by 5
-  if(runs % 5 == 0 && runs % 3 != 0 ){
+  else if(runs % 5 == 0 && runs % 3 != 0 ){
 
     console.log(runs + ": Buzz");
 
@@ -38,15 +38,14 @@ for (var runs = 1 ; runs <= 21  ; runs++){
 
 
   //if number is only divideble by 5
-  if(runs % 5 == 0 && runs % 3 == 0 ){
+  else if(runs % 5 == 0 && runs % 3 == 0 ){
 
     console.log(runs + ": FizzBuzz");
 
   }
 
-
-  //if number is not divideble by 3 or 5
-  if(runs % 3 != 0 && runs % 5 != 0 ){
+  // if not matchning any of the above
+  else{
 
     console.log(runs)
 
