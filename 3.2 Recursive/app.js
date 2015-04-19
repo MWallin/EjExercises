@@ -1,4 +1,4 @@
-// Exercise 3.1 Recursive
+// Exercise 3.2 Recursive
 /*
 
   We’ve seen that % (the remainder operator) can be used to test whether a number is even or
