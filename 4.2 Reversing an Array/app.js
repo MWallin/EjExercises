@@ -22,7 +22,7 @@
 */
 
 
-console.log(ReverseArray(["A", "B", "C"]));
+//console.log(ReverseArray(["A", "B", "C"]));
 
 
 function ReverseArray(ArrayToReverse) {
@@ -40,5 +40,37 @@ function ReverseArray(ArrayToReverse) {
   //console.log("Array after: " + ReversedArray);
 
   return ReversedArray;
+
+}
+
+
+var arrayValue = [1, 2, 3, 4, 5, 6, 7, 8];
+ReverseArrayInPlace(arrayValue);
+
+console.log(arrayValue);
+
+
+
+function ReverseArrayInPlace(arrayValue) {
+
+  var CurrentValue = 0;
+
+
+  console.log("Incoming Array: " + arrayValue);
+
+
+  for (var Runs = 0; Runs < Math.floor(arrayValue.length / 2); Runs++) {
+
+    CurrentValue = arrayValue[Runs];
+
+    arrayValue[Runs] = arrayValue[arrayValue.length - 1 - Runs];
+
+    arrayValue[arrayValue.length - 1 - Runs] = CurrentValue;
+
+  }
+
+
+  console.log("Array after: " + arrayValue);
+
 
 }
